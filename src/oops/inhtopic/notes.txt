@@ -1,0 +1,80 @@
+Inheritance:-
+-------------
+		==> Code Reusibility.
+		===> To reduce code/logic Duplication.
+	
+
+					A(addFun())---[Parent/Super/Base]
+					|
+		------------------------------------------------------------------	
+		|		|			|			|
+		B		C			D			E----[Child/Derived/Sub]
+---------------------------------------------------------------------------------------------------------------------------
+
+				Type of Inheritance[5 Ways]
+				----------------------------
+
+
+					 [By Interface](Abstraction Topic)	
+						|
+						|
+		     --------------------------------------------------------------------
+		     |									|	
+		[By Java Class]								|
+		     |									|
+   --------------------------------------------				   --------------------------
+     |		     |			     |  			    |			    |			
+     |		     |			     |				    |			    |	
+------------    ------------		----------------		--------------		----------------
+1. Single	2. MultiLevel		3. Hierarchical			4. Multiple		5. Hybrid
+------------    ------------		----------------		--------------		----------------
+    A(no1)		A(no1)			A(no1)			A(no1)	B(no2)			A(no1)
+    |			|			|			|	|			|
+    B(no2)		B(no2)		 ----------------		----------		-----------------
+			|		 |		|		     |			|		|	
+A obj;// no1		C(no3)		 B(no2)		C(no3)		     C(no3)		B(no2)		C(no3)
+B obj;// no1,no2			 							|		|
+		   A obj;// no1		   A obj;// no1			A obj;// no1		-----------------
+		   B obj;// no1,no2	   B obj;// no1,no2		B obj;// no2			|	
+		   C obj;// no1,no2,no3    C obj;// no1,no3		C obj;// no1,no2,no3		D(no4)	
+												A obj;// no1	
+												B obj;// no1,no2
+												C obj;// no1,no3
+												D obj;// no1,no2,no3,no4		
+
+1. Single Inheritance:-
+-------------------------
+			
+			Person(name)
+			  |
+			Student(rno,std)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
