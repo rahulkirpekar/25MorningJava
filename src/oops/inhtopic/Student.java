@@ -9,7 +9,15 @@ import java.util.Scanner;
 public class Student extends Person
 {
 	int rno,std;
+
+	public Student(int rno,String name,int std) 
+	{
+		super(name);
+		this.rno = rno;
+		this.std=std;
+	}
 	
+/*	
 	public void scanData() 
 	{
 		Scanner sc = new Scanner(System.in);
@@ -22,22 +30,5 @@ public class Student extends Person
 		System.out.println("Enter Std : ");
 		std  = sc.nextInt();
 	}
-	public void dispData() 
-	{
-		System.out.println(rno+" " + name+" " + std);
-	}
-	public static void main(String[] args) 
-	{
-		Student s1= new Student();// s1--[rno name std]
-		Student s2= new Student();// s2--[rno name std]
-		Student s3= new Student();// s3--[rno name std]
-
-		s1.scanData();
-		s2.scanData();
-		s3.scanData();
-		
-		s1.dispData();
-		s2.dispData();
-		s3.dispData();
-	}
+*/
 }
