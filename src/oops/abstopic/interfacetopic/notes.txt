@@ -1,0 +1,40 @@
+Abstraction:-
+--------------
+	  0 to 100%			    100%	
+	1. Abstract Class		2. interface
+-------------------------------------------------------------------------
+
+public abstract interface A
+{
+	// 1. Constant Variables[public static final]
+	int no;// public static final
+	
+	//2. Member Function
+		
+		//1.Abstract Method
+		public abstract void test1();// public abstract		
+	
+		//2.Non-Abstract Method		
+		1.static method---Java 8th version
+		2.default method---Java 8th version
+		3.private method---Java 9th version		
+}
+				interface
+				   |
+				abstract class
+				   |
+				concrete class	
+----------------------------------------------------------------------------------------
+	class		interface		interface
+	 |---extends	  |--implements		   |---extends	
+	class		class			interface
+
+			class 
+			  |-----X(Not Possible in Java)
+			interface	
+		
+
+class B implements A 
+{
+	
+}
