@@ -1,0 +1,99 @@
+String--- Multiple characters--->char Array
+-------
+	Scanner sc= new Scanner(System.in);
+	char value;
+	System.out.println("Enter Charcater Value : ");
+	// 1. value = sc.next().charAt(0);
+	// 2. value = (char)System.in.read();// A--65
+--------------------------------------------------------------------------------------------------------------------
+			Ways to Operate Data on String in Java
+			----------------------------------------
+
+	1. Immutable Way			2. Mutable Way
+	-----------------			-----------------
+	1. String(class)			2. StringBuilder(class)
+						3. StringBuffer(class)
+--------------------------------------------------------------------------------------------------------------------
+
+1. Immutable Way (String class):-
+-------------------------------
+	1. By String literal way[RAM----->HEAP----->SCP---(String Consant Pool)]:-
+	-------------------------------------------------------------------------
+
+		String name1 = "royal";
+		String name2 = "royal";
+		String name3 = "technosoft";
+	
+		name4 = name1.concat(name3);// royaltechnosoft
+
+		String name5 = name1;
+
+	String Object Equality:-
+	-------------------------
+
+			1. referenceBased(==)				2. valueBased(.equals())
+			--------------------				------------------------
+			SOP(name1==name2);// true			SOP(name1.equals(name2));// true
+			SOP(name1==name3);// false			SOP(name1.equals(name3));// false
+			SOP(name1==name4);// false			SOP(name1.equals(name4));// false
+			SOP(name1==name5);// true			SOP(name1.equals(name5));// true
+------------------------------------------------------------------------------------------------------------------------------------------------
+	2. By 'new' keyword way [RAM----->HEAP]:-
+	-----------------------------------------
+
+		String name1 = new String("royal");
+		String name2 = new String("royal");
+
+		String name3 = name1.concat("technosoft");//royaltechnosoft
+
+		String name4 = name1;
+
+	String Object Equality:-
+	-------------------------
+
+			1. referenceBased(==)				2. valueBased(.equals())
+			--------------------				------------------------
+			SOP(name1==name2);// false			SOP(name1.equals(name2));// true
+			SOP(name1==name3);// false			SOP(name1.equals(name3));// false
+			SOP(name1==name4);// true			SOP(name1.equals(name4));// true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
