@@ -1,0 +1,108 @@
+Exception:- Abnormal Scenario.--->raise Exception--->code crashed
+-----------
+
+	===> An Exception in Java is an unexpected or abnormal event that occurs during the execution of a program, which disrupts the normal flow of instructions.
+
+
+
+
+1.
+	ans = 10 / 0 ;// create ArithmericException object ---code crashed
+	SOP("Addition : " + ans);// 
+----------------------------------------------------------------------------
+2.
+	String name = null;
+	SOP(name.length());// NullPointerException
+----------------------------------------------------------------------------
+3.
+	int a[] = new int[5]; // a[0],a[1],a[2],a[3],a[4]
+	a[5] = 100; //ArrayIndexoutofBoundException
+----------------------------------------------------------------------------
+4.
+		//     01234
+	String name = "royal";
+	SOP(name.charAt(5));// StringIndexoutofBoundException
+----------------------------------------------------------------------------
+5.
+	String value = "abcd";
+	int no = Integer.parseInt(value);// NumberFormateException
+	//SOP(no+1000);// 2200
+	//SOP(value + 1000);// 12001000
+----------------------------------------------------------------------------
+
+6.ClassCastException
+
+		A
+		|
+	------------------
+	|		|
+	B		C
+
+	A obj = new B();// Runtime Polymorphism
+
+	B obj = (B)obj;// PASSED
+
+	C obj = (C)obj;// ClassCastException
+	
+			Type of Exception
+			-----------------
+
+	1. Checked Exception			2. Un-Checked Exception
+	----------------------			----------------------
+	compiler--compileTime			Runtime---JVM
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+				Hierarchy of Exception
+				-----------------------
+
+					Throwable
+					   |
+		----------------------------------------------------------------------------
+		|									|
+	   1. Error(Irrecoverable)						2. Exception(Recoverable)----[Exception Handling]---[try...catch..finally]
+		|									|
+	--StackOverFlowError								|
+	--AssertionError					----------------------------------------------------------
+								|--compileTime/checked Exception			|(Unchecked Exception)
+							--IOException						RuntimeException(class)	
+							--SQLException							|
+							--FileNotFoundException					--ArithmeticException	
+							--ClassNotFoundException				--NullpointerException	
+							....							--StringIndexoutofBoundException	
+														--ArrayIndexoutofBoundException	
+														--ClassCastException	
+														--NumberFormateException,...
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
