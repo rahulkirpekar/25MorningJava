@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TestApp6 
 {
-	public static void isValidForVote(int age) throws ArithmeticException
+	public static void isValidForVote(int age) throws InvalidAgeException
 	{
 		if (age < 18) 
 		{
@@ -13,8 +13,12 @@ public class TestApp6
 			// 1. checked exception
 //			throw new IOException("\nInvalid Age,\n\tPlease netr valid age for Vote");
 			
+//			throw new InvalidAgeException("\n\"Invalid Age,\n\tPlease netr valid age for Vote\"");
+			
+			
 			// 2. Unchecked exception
-			throw new ArithmeticException("\nInvalid Age,\n\tPlease netr valid age for Vote");
+//			throw new ArithmeticException("\nInvalid Age,\n\tPlease netr valid age for Vote");
+			throw new InvalidAgeException("\n\"Invalid Age,\n\tPlease netr valid age for Vote\"");
 		} 
 		else 
 		{
@@ -32,7 +36,7 @@ public class TestApp6
 		{
 			isValidForVote(age);
 		} 
-		catch (ArithmeticException e) 
+		catch (InvalidAgeException e) 
 		{
 			e.printStackTrace();
 		}
