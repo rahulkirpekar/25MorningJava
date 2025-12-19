@@ -1,0 +1,52 @@
+      read	  write	
+	|	   |
+I(InputStream)O(OutputStream):-
+--------------------------------
+
+		OutputStream(write)
+		      |
+	Data---------write--------->File
+
+
+		  InputStream(read)
+		      |
+	Data<---------read----------File
+
+
+Data:-
+-------
+
+1. String				2. Objects(User Defined Objects)
+---------------				---------------------------------
+	===> Byteoriented way
+		==>FileOutputStream(write)
+		==>FileInputStream(read)
+
+
+	===> Character Orientedway	===> Byteoriented way
+		==>FileWriter			==>FileOutputStream(write)
+		==>FileReader			==>FileInputStream(read)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

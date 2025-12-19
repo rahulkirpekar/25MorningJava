@@ -12,7 +12,6 @@ public class TestApp6
 			// raise exception---custom Exception
 			// 1. checked exception
 //			throw new IOException("\nInvalid Age,\n\tPlease netr valid age for Vote");
-			
 //			throw new InvalidAgeException("\n\"Invalid Age,\n\tPlease netr valid age for Vote\"");
 			
 			
