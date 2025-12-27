@@ -1,19 +1,30 @@
 package collectionfrmwrk.list;
 
+import java.util.Scanner;
+
 public class Student 
 {
 	private int rno;
 	private String name;
 	private int std;
+	private int marks;
 
 	public Student() 
 	{
 	}
-	public Student(int rno, String name, int std) 
+	public Student(int rno, String name, int std,int marks) 
 	{
 		this.rno = rno;
 		this.name = name;
 		this.std = std;
+		this.marks = marks;
+		
+	}
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
 	}
 	public int getRno() {
 		return rno;
@@ -38,4 +49,14 @@ public class Student
 //	{
 //		return "==>"+rno+" " + name+" " + std;
 //	}
+	public void update() 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Name : ");
+		name =sc.nextLine();
+		System.out.println("Enter Std : ");
+		std =sc.nextInt();
+		System.out.println("Enter Marks : ");
+		marks =sc.nextInt();
+	}
 }
