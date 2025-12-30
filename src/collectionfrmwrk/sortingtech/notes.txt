@@ -1,0 +1,40 @@
+Sorting Techniques:-
+---------------------
+
+	List		Set		Queue		Map		
+	 |		 |		  |		 |
+	 -	      TreeSet	     PriorityQueue     TreeMap
+	
+Collection--Topic Name
+Collection(I)--interface
+Collections--Class
+
+	Collections.sort(list);// Ascending Order Sorting 
+---------------------------------------------------------------------------------------------------------
+
+1. Comparable(I)			
+-------------------
+	compareTo(Object obj);
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
