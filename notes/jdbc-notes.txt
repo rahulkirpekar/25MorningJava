@@ -1,0 +1,48 @@
+
+3-Statement
+---------------
+
+	1.Statement(I)---Academic
+		|
+	2.PreparedStatement(I)--(Industry)
+	
+	3.CallableStatement(I)---function,trigers,procedures	
+
+
+
+
+
+
+
+int executeUpdate()   executeQuery()---ResultSet(Multiple rows)	
+	  |		  |
+	Insert		Select
+	UPDATE
+	delete
+
+
+
+DAO--- Data Access Object
+
+
+	Student---StudentDao
+	Product--ProductSDao
+	Employee--EmployeeDao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

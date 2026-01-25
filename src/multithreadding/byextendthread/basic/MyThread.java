@@ -1,0 +1,27 @@
+package multithreadding.byextendthread.basic;
+
+// 1. By extending Thread class
+public class MyThread extends Thread
+{
+	// Thread---job Defined
+	@Override
+	public void run() 
+	{
+		System.out.println("Hi I am Thread : "+Thread.currentThread().getId() + "---"+ Thread.currentThread().getName());
+	}
+	
+	public static void main(String[] args) 
+	{
+		MyThread t1 = new MyThread();
+		MyThread t2 = new MyThread();
+		MyThread t3 = new MyThread();
+		MyThread t4 = new MyThread();
+		MyThread t5 = new MyThread();
+		
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		t5.start();
+	}
+}

@@ -1,28 +1,33 @@
-package collectionfrmwrk.sortingtech.bycomparator;
+package jdbctopic.bean;
 
-public class Student 
+public class StudentBean 
 {
 	private int rno;
 	private String name;
 	private int std;
 	private int marks;
 	
-	public Student() 
+	public StudentBean() 
 	{
 	}
 
-	public Student(int rno, String name, int std, int marks) {
-		super();
+	public StudentBean(String name, int std, int marks) 
+	{
+		this.name = name;
+		this.std = std;
+		this.marks = marks;
+	}
+	public StudentBean(int rno, String name, int std, int marks) {
 		this.rno = rno;
 		this.name = name;
 		this.std = std;
 		this.marks = marks;
 	}
 
-	public int getRno() 
-	{
+	public int getRno() {
 		return rno;
 	}
+
 	public void setRno(int rno) {
 		this.rno = rno;
 	}
@@ -50,16 +55,4 @@ public class Student
 	public void setMarks(int marks) {
 		this.marks = marks;
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-

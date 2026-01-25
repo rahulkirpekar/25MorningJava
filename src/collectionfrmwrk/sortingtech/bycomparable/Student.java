@@ -51,26 +51,26 @@ public class Student implements Comparable<Student>
 		this.marks = marks;
 	}
 
-//	@Override
-//	public int compareTo(Student s2) 
-//	{
-//		if (getStd() > s2.getStd()) 
-//		{
-//			return 1;
-//		} else if(getStd() < s2.getStd())
-//		{
-//			return -1;
-//		}else 
-//		{
-//			return 0;
-//		}
-//	}
-
 	@Override
 	public int compareTo(Student s2) 
 	{
-		return getName().compareTo(s2.getName());
+		if (getStd() > s2.getStd()) 
+		{
+			return 1;
+		} else if(getStd() < s2.getStd())
+		{
+			return -1;
+		}else 
+		{
+			return 0;
+		}
 	}
+
+//	@Override
+//	public int compareTo(Student s2) 
+//	{
+//		return getName().compareTo(s2.getName());
+//	}
 
 	// Sorting Defination--marks
 //	@Override

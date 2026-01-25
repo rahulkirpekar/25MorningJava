@@ -1,0 +1,24 @@
+MultiThreadding:-
+-----------------
+
+Ways to create Thread in Java:-
+---------------------------------
+
+	1. By extending Thread class:-
+	-----------------------------------
+		Runnable(run())
+		   |
+		 Thread(run()---job defined)
+		   |
+		MyThread
+
+
+
+
+
+	2. By implementing Runnable interface.
+
+	
+
+
+
